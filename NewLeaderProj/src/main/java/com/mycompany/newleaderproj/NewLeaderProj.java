@@ -6,7 +6,7 @@ package com.mycompany.newleaderproj;
 
 /**
  *
- * @author ezenb
+ * @author ethanb
  */
 public class NewLeaderProj {
 
