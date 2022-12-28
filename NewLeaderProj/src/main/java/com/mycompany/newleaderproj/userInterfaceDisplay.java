@@ -7,15 +7,10 @@ package com.mycompany.newleaderproj;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
-import org.jfree.data.general.Series;
 import org.jfree.data.general.SeriesException;
-import org.jfree.data.time.Day;
-import org.jfree.data.time.TimeSeries;
-import org.jfree.data.time.TimeSeriesCollection;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.ui.ApplicationFrame;
-import java.lang.Comparable;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -39,7 +34,6 @@ public class userInterfaceDisplay extends ApplicationFrame {
         for (int i = -100; i <= 100; i+=5) {
             try {
                 data.add(i, i);
-                System.out.print(data.getItems());
             }
             catch (SeriesException e) {
                 System.err.println("Error adding to series");
